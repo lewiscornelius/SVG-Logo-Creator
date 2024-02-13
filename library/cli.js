@@ -6,7 +6,7 @@ const { writeFile } = require("fs/promises");
 class CLI {
     run() {
         return inquirer
-        .createPromptModule([
+        .prompt([
             {
                 name: "text",
                 type: "input",
